@@ -11,7 +11,7 @@ setup.py ::
 
     $ cd pyopengl
     $ python setup.py develop
-    $ cd加速
+    $ cd accelerate
     $ python setup.py develop
 
 PyOpenGL_accelerateをコンパイルするには、
