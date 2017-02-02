@@ -1,3 +1,47 @@
+
+PyOpenGLとPyOpenGL_accelerate
+=================================
+
+PyOpenGLは標準的なpipを使用してPyPI経由で通常配布されます::
+
+    $ pip install PyOpenGL PyOpenGL_accelerate
+
+このリポジトリは、ブランチング/クローニングと実行によってインストールできます
+setup.py ::
+
+    $ cd pyopengl
+    $ python setup.py develop
+    $ cd加速
+    $ python setup.py develop
+
+PyOpenGL_accelerateをコンパイルするには、
+機能するPython拡張コンパイル環境。
+
+PyOpenGLを学ぶ
+-----------------
+
+PyOpenGLを初めてお使いの方は、OpenGLContextのチュートリアルページから始めたいと思うでしょう。
+これらのチュートリアルではOpenGLContextが必要です（これは大きなラッパーです
+シーングラフエンジン、VRML97パーサ、多くのデモなど）をインストールするには::
+
+    $ pip install "OpenGLContext-full == 3.1.1
+
+`ドキュメンテーションページ`は、以下のようなパラメータと意味を調べるのに便利です。
+PyOpenGLが呼び出します。
+
+.. _`tutorial page`：http://pyopengl.sourceforge.net/context/tutorials/index.html
+.. _`documentation pages`：http://pyopengl.sourceforge.net/documentation/
+
+
+テストの実行
+--------------
+
+
+
+
+
+
+
 PyOpenGL and PyOpenGL_accelerate
 =================================
 
