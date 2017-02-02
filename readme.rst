@@ -35,7 +35,43 @@ PyOpenGLが呼び出します。
 
 テストの実行
 --------------
+テストの実行
+--------------
 
+テストスイートを実行するには、Pygameを事前にビルドしておき、
+ナンシーホイール、Python 2.6,2.7,3.4、3.5。ザ
+テストスイート用のホイールは、ディレクトリに格納する必要があります
+ルートチェックアウトと同じレベルの「ホイールハウス」と呼ばれています。
+
+Ubuntuでホイールを構築する::
+
+    $ hgクローンhttps://bitbucket.org/pygame/pygame
+    $ apt-get build-dep pygame python-numpy
+    $ pip2.6 wheel / pygame numpy
+    $ pip2.7 wheel / pygame numpy
+    $ pip3.4 wheel / pygame numpy
+    $ pip3.5 wheel / pygame numpy
+
+pyopenglをチェックアウトしたのと同じディレクトリ
+ディレクトリにあなたのすべての車輪がありますpyopengl
+toxスイートが期待しています。
+
+あなたは明らかにtoxを実行するために `tox`がインストールされている必要があります。
+このような：：
+
+    $ tox
+
+その結果、多数のテストが環境のマトリックスで実行されているため、
+Pythonのバージョン：
+
+    * 2.7
+    * 2.6
+    * 3.4
+
+アクセラレーションモジュールの有無にかかわらずテストを行い、
+環境にnumpyをインストールしないでください。 Python 3.5は
+しかし、Ubuntuのsite.pyには何か不具合があります
+毒性の下で試験が実行されることを防ぎます。
 
 
 
